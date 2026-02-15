@@ -11,5 +11,5 @@
   color: info
 
 - name: Blender
-  percentage: 100
+  percentage: 60
   color: success
