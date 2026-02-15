@@ -27,15 +27,16 @@ nav_exclude:                                            # The following paths ar
 author:
   name              : Alessandro Cionini
   image             : https://imgur.com/gH6FAkB.jpg
+  email             : acionini@gmail.com
+  linkedin          : alessandro-cionini-405222181
+  artstation        : shoncg
+  instagram         : shoncg
+  github            : ShonCG
 # behance           : your_username
 # dribbble          : your_username
-  email             : acionini@gmail.com
 # facebook          : your_username
-  github            : ShonCG
 # gitlab            : your_username
-# instagram         : your_username
 # kaggle            : your_username
-  linkedin          : alessandro-cionini-405222181
 # medium            : your_username
 # soundcloud        : your_username
 # spotify           : your_username
@@ -46,7 +47,7 @@ author:
 # vimeo             : your_username
 # youtube           : your_channel_name
 # keybase           : your_username
-  artstation        : shoncg
+
 
 
 ### Posts ###
