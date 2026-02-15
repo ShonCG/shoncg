@@ -8,8 +8,8 @@
 
 - name: Maya
   percentage: 70
-  color: secondary
+  color: info
 
 - name: Blender
   percentage: 100
-  color:
+  color: success

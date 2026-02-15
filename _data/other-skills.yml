@@ -1,11 +1,11 @@
 - name: Substance Painter
   percentage: 70
-  color: info
+  color: secondary
 
 - name: Photoshop
   percentage: 100
-  color: success
+  color: secondary
 
 - name: ZBrush
   percentage: 100
-  color: dark
+  color: secondary
