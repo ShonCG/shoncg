@@ -16,7 +16,7 @@
     {%- assign badge_style =  post.color | prepend: 'badge-' -%}
   {%- endif -%}
 {%- else -%}
-  {%- assign card_style = '' -%} {# neutral: no border, no fill #}
+  {%- assign card_style = '' -%}
 {%- endif -%}
 
 {%- comment -%} Determine Post URL {%- endcomment -%}
@@ -32,6 +32,7 @@
      style="
        display: block;
        overflow: hidden;
+       border-radius: 0.5rem;
        transition: transform 0.3s ease, box-shadow 0.3s ease;
      "
      onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 24px rgba(0,0,0,0.15)';"
@@ -39,7 +40,7 @@
   >
 
     {% if post.image %}
-      <div style="overflow: hidden;">
+      <div style="overflow: hidden; border-radius: 0.5rem 0.5rem 0 0;"> <!-- top corners only -->
         <img class="post-featured" src="{{ post.image | relative_url }}" alt="{{ post.title }}" 
              style="width: 100%; display: block; transition: transform 0.3s ease;"
              onmouseover="this.style.transform='scale(1.05)';"
