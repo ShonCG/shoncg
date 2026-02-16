@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: ShonCG - About
 permalink: /about/
 weight: 3
 ---
