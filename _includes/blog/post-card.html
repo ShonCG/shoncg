@@ -16,7 +16,7 @@
     {%- assign badge_style =  post.color | prepend: 'badge-' -%}
   {%- endif -%}
 {%- else -%}
-  {%- assign card_style = '' -%}
+  {%- assign card_style = '' -%} <!-- neutral: no border, no fill -->
 {%- endif -%}
 
 {%- comment -%} Determine Post URL {%- endcomment -%}
@@ -45,10 +45,7 @@
              width: 100%;
              display: block;
              border-radius: inherit;
-             transition: transform 0.3s ease;
            "
-           onmouseover="this.style.transform='scale(1.05)';"
-           onmouseout="this.style.transform='scale(1)';"
       >
     {% endif %}
 
