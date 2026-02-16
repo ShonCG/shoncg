@@ -1,116 +1,121 @@
 <body onload="document.querySelectorAll('.fade-in').forEach(e => e.style.opacity = 1)">
 
+<style>
+  /* ===== Base (Desktop) ===== */
+
+  .stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .stat-number {
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+
+  .stat-label {
+    font-size: 0.8rem;
+    opacity: 0.8;
+  }
+
+  .nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .hero-btn {
+    width: 160px;
+    padding: 0.6rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid currentColor;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: transform 0.15s ease, color 0.2s ease, border-color 0.2s ease;
+  }
+
+  .hero-btn:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+    transform: translateY(-2px);
+  }
+
+  .fade-in {
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+
+  /* ===== Mobile Overrides ===== */
+
+  @media (max-width: 768px) {
+
+    .stats {
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-buttons {
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+
+    .hero-btn {
+      width: 140px;
+    }
+  }
+</style>
+
 <div class="row justify-content-center align-items-center p-4">
   <div class="col-lg-4 col-md-6 text-center mt-4">
 
-    <!-- Fine Circle Responsive Image -->
+    <!-- Profile Image -->
     <div id="container" class="my-2">
       <div id="dummy"></div>
       <div id="element">
-        <img src="{{ site.author.image }}" alt="{{ site.title }}" class="circle-image wow animated zoomIn" data-wow-delay=".1s">
+        <img src="{{ site.author.image }}"
+             alt="{{ site.title }}"
+             class="circle-image wow animated zoomIn"
+             data-wow-delay=".1s">
       </div>
     </div>
 
     <!-- Bio -->
-    <p class="text-muted wow animated slideInUp" data-wow-delay=".15s">{{ site.description }}</p>
+    <p class="text-muted wow animated slideInUp" data-wow-delay=".15s">
+      {{ site.description }}
+    </p>
 
     <!-- Stats -->
-    <div class="fade-in"
-      style="
-        display: flex;
-        justify-content: center;
-        gap: 1.5rem;
-        margin-top: 1.5rem;
-        font-size: 1.05rem;
-        opacity: 0;
-        transition: opacity 1s ease;
-        transition-delay: 0.75s;
-        flex-wrap: wrap;
-        text-align: center;
-      ">
-
+    <div class="stats fade-in" style="transition-delay: 0.75s;">
       <div>
-        <div style="font-size: 2.2rem; font-weight: 700;">4+</div>
-        <div style="font-size: 0.8rem; opacity: 0.8;">Years of Work</div>
+        <div class="stat-number">4+</div>
+        <div class="stat-label">Years of Work</div>
       </div>
 
       <div>
-        <div style="font-size: 2.2rem; font-weight: 700;">9+</div>
-        <div style="font-size: 0.8rem; opacity: 0.8;">Years in Game Dev</div>
+        <div class="stat-number">9+</div>
+        <div class="stat-label">Years in Game Dev</div>
       </div>
 
       <div>
-        <div style="font-size: 2.2rem; font-weight: 700;">4</div>
-        <div style="font-size: 0.8rem; opacity: 0.8;">Shipped Titles</div>
+        <div class="stat-number">4</div>
+        <div class="stat-label">Shipped Titles</div>
       </div>
-
     </div>
 
     <!-- Navigation Buttons -->
-    <div class="fade-in"
-      style="
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        margin-top: 2rem;
-        opacity: 0;
-        transition: opacity 1s ease;
-        transition-delay: 1.5s;
-        flex-wrap: wrap;
-      ">
-
-      <a href="/projects/"
-         style="
-           width: 160px;
-           padding: 0.6rem 1rem;
-           text-align: center;
-           text-decoration: none;
-           color: inherit;
-           border: 1px solid currentColor;
-           border-radius: 0.5rem;
-           font-weight: 500;
-           transition: transform 0.15s ease, color 0.2s ease, border-color 0.2s ease;
-         "
-         onmouseover="this.style.color='var(--primary)';this.style.borderColor='var(--primary)';this.style.transform='translateY(-2px)';"
-         onmouseout="this.style.color='inherit';this.style.borderColor='currentColor';this.style.transform='translateY(0)';">
-        Projects
-      </a>
-
-      <a href="/blog/"
-         style="
-           width: 160px;
-           padding: 0.6rem 1rem;
-           text-align: center;
-           text-decoration: none;
-           color: inherit;
-           border: 1px solid currentColor;
-           border-radius: 0.5rem;
-           font-weight: 500;
-           transition: transform 0.15s ease, color 0.2s ease, border-color 0.2s ease;
-         "
-         onmouseover="this.style.color='var(--primary)';this.style.borderColor='var(--primary)';this.style.transform='translateY(-2px)';"
-         onmouseout="this.style.color='inherit';this.style.borderColor='currentColor';this.style.transform='translateY(0)';">
-        Blog
-      </a>
-
-      <a href="/about/"
-         style="
-           width: 160px;
-           padding: 0.6rem 1rem;
-           text-align: center;
-           text-decoration: none;
-           color: inherit;
-           border: 1px solid currentColor;
-           border-radius: 0.5rem;
-           font-weight: 500;
-           transition: transform 0.15s ease, color 0.2s ease, border-color 0.2s ease;
-         "
-         onmouseover="this.style.color='var(--primary)';this.style.borderColor='var(--primary)';this.style.transform='translateY(-2px)';"
-         onmouseout="this.style.color='inherit';this.style.borderColor='currentColor';this.style.transform='translateY(0)';">
-        About
-      </a>
-
+    <div class="nav-buttons fade-in" style="transition-delay: 1.5s;">
+      <a href="/projects/" class="hero-btn">Projects</a>
+      <a href="/blog/" class="hero-btn">Blog</a>
+      <a href="/about/" class="hero-btn">About</a>
     </div>
 
   </div>
 </div>
+
+</body>
