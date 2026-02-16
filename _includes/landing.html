@@ -40,11 +40,87 @@
     </div>
 
     <!-- Navigation buttons -->
-    <div class="landing-buttons">
-      <a href="/projects/" class="landing-btn">Projects</a>
-      <a href="/blog/" class="landing-btn">Blog</a>
-      <a href="/about/" class="landing-btn">About</a>
-    </div>
+    <div style="
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+      ">
+
+    <a href="/projects/"
+      style="
+       width: 160px;
+       padding: 0.6rem 1rem;
+       text-align: center;
+       text-decoration: none;
+       color: inherit;
+       border: 1px solid currentColor;
+       border-radius: 0.5rem;
+       font-weight: 500;
+       transition: transform 0.15s ease, color 0.2s ease, border-color 0.2s ease;
+     "
+     onmouseover="
+       this.style.color = 'var(--primary)';
+       this.style.borderColor = 'var(--primary)';
+       this.style.transform = 'translateY(-2px)';
+     "
+     onmouseout="
+       this.style.color = 'inherit';
+       this.style.borderColor = 'currentColor';
+       this.style.transform = 'translateY(0)';
+     "
+  >Projects</a>
+
+  <a href="/blog/"
+     style="
+       width: 160px;
+       padding: 0.6rem 1rem;
+       text-align: center;
+       text-decoration: none;
+       color: inherit;
+       border: 1px solid currentColor;
+       border-radius: 0.5rem;
+       font-weight: 500;
+       transition: transform 0.15s ease, color 0.2s ease, border-color 0.2s ease;
+     "
+     onmouseover="
+       this.style.color = 'var(--primary)';
+       this.style.borderColor = 'var(--primary)';
+       this.style.transform = 'translateY(-2px)';
+     "
+     onmouseout="
+       this.style.color = 'inherit';
+       this.style.borderColor = 'currentColor';
+       this.style.transform = 'translateY(0)';
+     "
+  >Blog</a>
+
+  <a href="/about/"
+     style="
+       width: 160px;
+       padding: 0.6rem 1rem;
+       text-align: center;
+       text-decoration: none;
+       color: inherit;
+       border: 1px solid currentColor;
+       border-radius: 0.5rem;
+       font-weight: 500;
+       transition: transform 0.15s ease, color 0.2s ease, border-color 0.2s ease;
+     "
+     onmouseover="
+       this.style.color = 'var(--primary)';
+       this.style.borderColor = 'var(--primary)';
+       this.style.transform = 'translateY(-2px)';
+     "
+     onmouseout="
+       this.style.color = 'inherit';
+       this.style.borderColor = 'currentColor';
+       this.style.transform = 'translateY(0)';
+     "
+  >About</a>
+
+</div>
+
 
   </div>
 </div>
