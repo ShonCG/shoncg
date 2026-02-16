@@ -40,12 +40,16 @@
   >
 
     {% if post.image %}
-      <div style="overflow: hidden; border-radius: 0.5rem 0.5rem 0 0;"> <!-- top corners only -->
-        <img class="post-featured" src="{{ post.image | relative_url }}" alt="{{ post.title }}" 
-             style="width: 100%; display: block; transition: transform 0.3s ease;"
-             onmouseover="this.style.transform='scale(1.05)';"
-             onmouseout="this.style.transform='scale(1)';">
-      </div>
+      <img class="post-featured" src="{{ post.image | relative_url }}" alt="{{ post.title }}" 
+           style="
+             width: 100%;
+             display: block;
+             border-radius: inherit;
+             transition: transform 0.3s ease;
+           "
+           onmouseover="this.style.transform='scale(1.05)';"
+           onmouseout="this.style.transform='scale(1)';"
+      >
     {% endif %}
 
     <div class="card-body {{ text_style }}">
