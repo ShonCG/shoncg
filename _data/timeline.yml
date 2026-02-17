@@ -1,13 +1,18 @@
 - title: Technical Artist, Untold Games
   from: 2023
   to: Present
-  description: <p>I work with Unreal Engine on porting technically demanding projects, primarily for Nintendo Switch but also for multiplatform releases.</p>
-               <p>My main responsibility is to optimize graphics while preserving visual quality on hardware with limited capability, and over time I have gained strong theoretical and practical expertise in memory management and CPU optimization.</p>
-
-               <p>I have contributed to several projects, including</p>
-               <p>• Tales Of Kenzera Zau</p>
-               <p>• Batman Arkham Trilogy</p>
-               <p>• High On Life</p>
+  description: <p>This is where I'm currently working! My main software nowadays is <b>Unreal Engine</b>, and I'm in the porting team.</p>
+               <p>The titles I've come across are some of the most technically demanding yet, and the platform I primarily target is <b>Nintendo Switch</b> (more recently <b>Nintendo Switch 2</b>). Sometimes I also handle multiplatform releases for <b>PS5</b> and <b>Xbox</b> as well.</p>
+               <p>My responsibilities:
+               <ul>
+                  <li>Graphics optimization with a strong focus on visual fidelity.</li>
+                  <li>Memory management and CPU performance optimization.</li>
+                  <li>Debug and resolve issues across multiple systems.</li>
+                  <li>Coordinate with external teams to align on project requirements, timelines and deliverables.</li>
+                  <li>Coordinate projects with the internal team, Collaborate with programmers, artists and producers and mentor junior team members.</li>
+                </ul>
+                </p>
+               <p>I have contributed to several projects, including <b>Tales Of Kenzera Zau</b>, <b>Batman Arkham Trilogy</b> and <b>High On Life</b></p>
 
 - title: Technical Artist, Whitesock
   from: 2021
