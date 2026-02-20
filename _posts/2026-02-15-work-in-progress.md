@@ -1,5 +1,5 @@
 ---
-title: Global illumination on mobile - Leo's World retrospective
+title: Work In Progress
 image: /images/blog/il-mondo-di-leo/il-mondo-di-leo-cover.jpg
 tags: [Unity][Mobile][Performance]
 style: 
